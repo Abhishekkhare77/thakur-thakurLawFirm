@@ -3633,6 +3633,7 @@ Back To Top Section
   padding-top: .7rem;
   padding-bottom: .7rem;
   font-size: 36px;
+  width: 500px;
 }
 
 .navbar-main {
@@ -3739,8 +3740,6 @@ Back To Top Section
   background-color: #ffffff;
   width: 100%;
   font-family: "Lora", serif;
-  /* END NAVBAR NAV */
-  /* END STIKY */
 }
 
 .header-1 .navbar-main .active>.nav-link {
