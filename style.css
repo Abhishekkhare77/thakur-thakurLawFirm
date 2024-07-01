@@ -3636,6 +3636,7 @@ Back To Top Section
   width: 500px;
 }
 
+
 .navbar-main {
   font-family: 'Lobster', cursive;
   -webkit-transition: padding .2s ease-in-out;
@@ -3733,7 +3734,7 @@ Back To Top Section
 }
 
 .header-1 {
-  /*position: relative;*/
+  /* position: relative; */
 }
 
 .header-1 .navbar-main {

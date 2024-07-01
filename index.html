@@ -29,6 +29,33 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<style>
+		.navbar-toggler {
+			z-index: 101;
+		}
+
+		.dropdown-menu {
+			position: static;
+			float: none;
+		}
+
+		.navbar-nav .dropdown-menu {
+			top: 100%;
+			margin-top: 0.125rem;
+		}
+
+		.navbar-collapse.collapse.show {
+			display: block;
+			/* Ensure the dropdown is shown below the button */
+			position: absolute;
+			top: 4rem;
+			left: -1rem;
+			width: 100vw;
+			background-color: white;
+		}
+	</style>
+
+
 </head>
 
 <body>
@@ -47,7 +74,7 @@
 				</div>
 				<div class="modal-body" style="padding: 1.5rem;">
 
-					<p class="subheading mb-4" >The content of this website is for informational purposes only and
+					<p class="subheading mb-4">The content of this website is for informational purposes only and
 						should not be interpreted as soliciting or advertisement. No material/information provided
 						on this website should be construed as legal advice, solicit or advertisement.</p><br>
 					<p class="subheading">Thakur and Thakur Associates shall not be liable for on sequences of
@@ -76,8 +103,7 @@
 	<a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
 
 	<!-- HEADER -->
-	<div class="header header-1">
-
+	<div class="header header-1" style="position: fixed; top: 0; z-index: 100; width: 100vw;">
 		<!-- TOPBAR -->
 		<div class="topbar d-none d-md-block">
 			<div class="container">
@@ -108,9 +134,10 @@
 		<!-- NAVBAR SECTION -->
 		<div class="navbar-main">
 			<div class="container">
-				<nav id="navbar-example" class="navbar navbar-expand-lg">
+				<nav id="navbar-example" class="navbar navbar-expand-lg" style="flex-wrap: nowrap;">
 					<a class="navbar-brand" href="index.html">
-						<img src="images/thakurLawlogo.jpg" class="img-fluid" alt="responsive-image" style="width: 25%;">
+						<img src="images/thakurLawlogo.jpg" class="img-fluid" alt="responsive-image"
+							style="width: 25%;">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,8 +146,12 @@
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
-							<li class="nav-item dropdown"><a class="nav-link" href="#">ABOUT US</a>
-								<div class="dropdown-menu">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									ABOUT US
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="about.html">ABOUT COMPANY</a>
 									<a class="dropdown-item" href="practice-area.html">PRACTICE AREAS</a>
 									<a class="dropdown-item" href="our-people.html">OUR PEOPLE</a>
@@ -135,7 +166,6 @@
 				</nav>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- BANNER -->
@@ -534,7 +564,8 @@
 				<div class="row">
 					<div class="col-sm-6 col-md-6 col-lg-3">
 						<div class="footer-item">
-							<img src="images/thakurLawlogo-removebg-preview.png" alt="logo bottom" class="logo-bottom" style="width: 60%;backdrop-filter: invert(1);">
+							<img src="images/thakurLawlogo-removebg-preview.png" alt="logo bottom" class="logo-bottom"
+								style="width: 60%;backdrop-filter: invert(1);">
 							<div class="spacer-30"></div>
 							<p>Thakur & Thakur Associates is a law firm whose leader is Advocate Thakur Anand Mohan
 								Singh, who is third generation of law practitioner ,founded in 2007 to serve as a
