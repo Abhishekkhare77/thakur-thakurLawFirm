@@ -32,6 +32,32 @@
   
 	  <link rel="stylesheet" href="style.css">
 
+	  <style>
+		.navbar-toggler {
+			z-index: 101;
+		}
+
+		.dropdown-menu {
+			position: static;
+			float: none;
+		}
+
+		.navbar-nav .dropdown-menu {
+			top: 100%;
+			margin-top: 0.125rem;
+		}
+
+		.navbar-collapse.collapse.show {
+			display: block;
+			/* Ensure the dropdown is shown below the button */
+			position: absolute;
+			top: 4rem;
+			left: -1rem;
+			width: 100vw;
+			background-color: white;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -45,29 +71,29 @@
 	<a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
 
 	<!-- HEADER -->
-    <div class="header header-1">
-
-    	<!-- TOPBAR -->
-    	<div class="topbar d-none d-md-block">
+    <div class="header header-1" style="position: fixed; top: 0; z-index: 100; width: 100vw;">
+		<!-- TOPBAR -->
+		<div class="topbar d-none d-md-block">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-sm-8 col-md-6">
 						<div class="info">
 							<div class="info-item">
-								<i class="fa fa-phone"></i> +91 99934 43000</div>
-								<div class="info-item"><i class="fa fa-whatsapp"></i> +91 99934 43000</div>
-						<div class="info-item">
-								<i class="fa fa-envelope-o"></i> <a href="mailto:tamsadv@yahoo.com" title="">tamsadv@yahoo.com</a>
+								<i class="fa fa-phone"></i> +91 99934 43000
+							</div>
+							<div class="info-item"><i class="fa fa-whatsapp"></i> +91 99934 43000</div>
+							<div class="info-item">
+								<i class="fa fa-envelope-o"></i> tamsadv@yahoo.com
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-4 col-md-6">
-							<div class="sosmed-icon pull-right d-inline-flex">
-									<a href="anand.thakur.140.html"><i class="fa fa-facebook"></i></a> 
-									<a href="#"><i class="fa fa-twitter"></i></a> 
-									<a href="#"><i class="fa fa-instagram"></i></a> 
-									<a href="#"><i class="fa fa-linkedin"></i></a> 
-							</div>
+						<div class="sosmed-icon pull-right d-inline-flex">
+							<a href="anand.thakur.140.html"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,34 +102,39 @@
 		<!-- NAVBAR SECTION -->
 		<div class="navbar-main">
 			<div class="container">
-			    <nav id="navbar-example" class="navbar navbar-expand-lg">
-			        <a class="navbar-brand" href="index.html">
-						<img src="images/thakurLawlogo.jpg" class="img-fluid" alt="responsive-image" style="width: 25%;">
+				<nav id="navbar-example" class="navbar navbar-expand-lg" style="flex-wrap: nowrap;">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/thakurLawlogo.jpg" class="img-fluid" alt="responsive-image"
+							style="width: 25%;">
 					</a>
-			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			            <span class="navbar-toggler-icon"></span>
-			        </button>
-			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			            <ul class="navbar-nav ml-auto">
-			            	<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-							<li class="nav-item active dropdown"><a class="nav-link" href="#">ABOUT US</a>
-							<div class="dropdown-menu">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									ABOUT US
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 									<a class="dropdown-item" href="about.html">ABOUT COMPANY</a>
-									<a class="dropdown-item active" href="practice-area.html">PRACTICE AREAS</a>
-								<a class="dropdown-item" href="our-people.html">OUR PEOPLE</a>
-								<a class="dropdown-item" href="disclaimer.html">DISCLAIMER</a>
-							</div>
+									<a class="dropdown-item" href="practice-area.html">PRACTICE AREAS</a>
+									<a class="dropdown-item" href="our-people.html">OUR PEOPLE</a>
+									<a class="dropdown-item" href="disclaimer.html">DISCLAIMER</a>
+								</div>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="career.html">CAREER</a></li>
 							<li class="nav-item"><a class="nav-link" href="https://google.com">BLOGS</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-			            </ul>
-			        </div>
-			    </nav>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
-
-    </div>
+	</div>
 
 	<!-- BANNER -->
 	<div class="section banner-page" data-background="https://tat-associates.netlify.app/images/DSC_9132.jpg">
